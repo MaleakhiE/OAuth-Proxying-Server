@@ -13,9 +13,9 @@ st.write("Send an email or read recent emails using Basic Auth through a proxy s
 
 # Azure AD configuration inputs
 st.markdown("### Azure AD Configuration")
-client_id = st.text_input("Azure Client ID", value="14dfa8f3-e0e9-420c-889a-f7c3d369f604")
-client_secret = st.text_input("Azure Client Secret", value="KtX8Q~tIi8NEGujS2sUBi3jgt~nGgZ8mEpSwMbJk", type="password")
-tenant_id = st.text_input("Azure Tenant ID", value="39c345ae-bf0d-40bf-aba9-081979356879")
+client_id = st.text_input("Azure Client ID", value="")
+client_secret = st.text_input("Azure Client Secret", value="", type="password")
+tenant_id = st.text_input("Azure Tenant ID", value="")
 st.markdown("---")
 
 # User inputs for email and password
