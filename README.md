@@ -5,8 +5,7 @@ Email Sending and Reading: Users can send and read emails via Microsoft Graph AP
 Interactive Frontend: A Streamlit interface for easy user interaction, including email fields and real-time loading indicators.
 Project Structure
 
-bash
-Copy code
+
 .
 ├── flask_proxy_server.py       # Flask server code
 ├── streamlit_app.py            # Streamlit frontend application
@@ -19,13 +18,13 @@ Microsoft Graph API permissions to Mail.Send and Mail.Read.
 Setup
 
 1. Clone the Repository
-bash
-Copy code
+
+
 git clone https://github.com/your-username/oauth-email-proxy-app.git
 cd oauth-email-proxy-app
 2. Install Required Packages
-bash
-Copy code
+
+
 pip install -r requirements.txt
 3. Configure Azure AD Application
 Go to the Azure AD portal and create an application.
@@ -38,16 +37,16 @@ Edit streamlit_app.py to add the Client ID, Client Secret, and Tenant ID you obt
 5. Start the Flask Proxy Server
 Run the Flask server to handle requests:
 
-bash
-Copy code
+
+
 python flask_proxy_server.py
 This server will run on http://localhost:5000 by default.
 
 6. Start the Streamlit Application
 Run the Streamlit app:
 
-bash
-Copy code
+
+
 streamlit run streamlit_app.py
 The Streamlit app will open in a web browser, allowing you to input email details and interact with the Flask proxy server.
 
