@@ -20,7 +20,7 @@ Setup
 1. Clone the Repository
 
 
-git clone https://github.com/your-username/oauth-email-proxy-app.git
+git clone https://github.com/MaleakhiE/OAuth-Proxying-Server.git
 cd oauth-email-proxy-app
 2. Install Required Packages
 
