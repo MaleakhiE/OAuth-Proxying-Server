@@ -19,15 +19,11 @@ Emails will be displayed in the Streamlit app with details like subject, sender,
 **Flask Proxy Server**
 The Flask server handles two main routes:
 
-/send_email: Receives Basic Auth credentials and Azure AD information, obtains an OAuth token, and sends an email through Microsoft Graph API.
-
-/read_emails: Receives Basic Auth credentials and Azure AD information, obtains an OAuth token, and retrieves recent emails from Microsoft Graph API.
-Streamlit Application (streamlit_app.py)
-
-The Streamlit app provides a user-friendly interface to input email and Azure AD credentials, as well as send or read emails. It communicates with the Flask server using HTTP POST requests.
+- /send_email: Receives Basic Auth credentials and Azure AD information, obtains an OAuth token, and sends an email through Microsoft Graph API.
+- /read_emails: Receives Basic Auth credentials and Azure AD information, obtains an OAuth token, and retrieves recent emails from Microsoft Graph API.
 
 **Troubleshooting**
 
-HTTP 400 Errors: Ensure that all required fields (Client ID, Client Secret, Tenant ID, email, and password) are correctly filled.
-HTTP 404 Errors: Confirm that the Flask server is running and accessible at the URL specified in streamlit_app.py.
-Microsoft Graph API Permissions: Ensure that your Azure AD app has the necessary permissions (Mail.Send and Mail.Read) and that admin consent has been granted.
+- HTTP 400 Errors: Ensure that all required fields (Client ID, Client Secret, Tenant ID, email, and password) are correctly filled.
+- HTTP 404 Errors: Confirm that the Flask server is running and accessible at the URL specified in streamlit_app.py.
+- Microsoft Graph API Permissions: Ensure that your Azure AD app has the necessary permissions (Mail.Send and Mail.Read) and that admin consent has been granted.
