@@ -20,8 +20,10 @@ Emails will be displayed in the Streamlit app with details like subject, sender,
 The Flask server handles two main routes:
 
 /send_email: Receives Basic Auth credentials and Azure AD information, obtains an OAuth token, and sends an email through Microsoft Graph API.
+
 /read_emails: Receives Basic Auth credentials and Azure AD information, obtains an OAuth token, and retrieves recent emails from Microsoft Graph API.
 Streamlit Application (streamlit_app.py)
+
 The Streamlit app provides a user-friendly interface to input email and Azure AD credentials, as well as send or read emails. It communicates with the Flask server using HTTP POST requests.
 
 **Troubleshooting**
