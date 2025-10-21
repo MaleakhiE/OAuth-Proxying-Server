@@ -2,9 +2,9 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 # Email credentials and settings
-email_address = "maleakhi@dikstrasolusi.com"  # Basic Auth uses email format
+email_address = "username@example.com"  # Basic Auth uses email format
 password = "YourPasswordHere"  # Replace with actual password
-ews_url = "http://192.168.10.50:5000/send_email"  # Proxy server URL
+ews_url = "http://<Proxy Server>/send_email"  # Proxy server URL
 
 # Create the XML payload for sending an email
 email_subject = "Test Email"
